@@ -20,11 +20,10 @@ switch (televisor) {
 }
 
 switch (acciones) {
-    case "cambiar de canal":
-        cambioCanal = Number(prompt(`Estás en el canal ${canal}, con un volúmen de ${volumen}. Podés elegir un canal entre 0 y 99 ¿Qué canal te gustaría ver?`));
+    case "1":
+        cambioCanal = Number(prompt(`Estás en el canal ${canal}, con un volúmen en ${volumen}. Podés elegir un canal entre 0 y 99 ¿Qué canal te gustaría ver?`));
         if (cambioCanal >= 0 && cambioCanal <= 99){
-        alert(`Has elegido bien, 
-    tu canal actual es el ${cambioCanal}`);
+        alert(`Has elegido bien, tu canal actual es el ${cambioCanal}, con un volúmen en ${volumen}.`);
         accion = confirm("¿Deseas realizar otra acción o salir del menú?")
 }        else  {
             alert("El número elegido no existe")
@@ -32,7 +31,7 @@ switch (acciones) {
         break;
     case "2":
         subirCanal = canal +1,
-        subirCanal = prompt(`Estas en el ${canal}.
+        subirCanal = prompt(`Estas en el ${canal}, con volúmen en ${volumen}.
     Ahora te encuetras en el canal ${subirCanal}`);
         accion = confirm("¿Deseas realizar otra acción o salir del menú?")   
         break;
@@ -41,25 +40,25 @@ switch (acciones) {
         break;
     case "3":
         bajarCanal = canal - 1;
-        bajarCanal = prompt(`Estas en el ${canal}.
+        bajarCanal = prompt(`Estas en el ${canal}, con volúmen en ${volumen}.
     Ahora te encuetras en el canal ${bajarCanal}`);
         accion = confirm("¿Deseas realizar otra acción o salir del menú?")  
         break; 
     case "4":
         subirVolumen = volumen + 5,
-        subirVolumen = prompt(`El volúmen está en ${volumen}.
+        subirVolumen = prompt(`Estas en el ${canal}, el volúmen está en ${volumen}.
     Ahora subió a ${subirVolumen}`);
         accion = confirm("¿Deseas realizar otra acción o salir del menú?")   
         break;   
     case "bajar volumen" && "5":
         bajarVolumen = volumen - 5,
-        bajarVolumen = prompt(`El volúmen está en ${volumen}.
+        bajarVolumen = prompt(`Estas en el ${canal}, el volúmen está en ${volumen}.
     Ahora bajó a ${bajarVolumen}`);
         accion = confirm("¿Deseas realizar otra acción o salir del menú?")   
         break;    
     case "6":
         mute = 0;
-        mute = alert(`El volúmen está en ${volumen}.
+        mute = alert(`Estas en el ${canal}, el volúmen está en ${volumen}.
     Ahora bajó a ${mute}`);
         accion = confirm("¿Deseas realizar otra acción o salir del menú?")   
         break;          

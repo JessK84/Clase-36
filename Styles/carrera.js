@@ -9,14 +9,14 @@
 
 
 let cantidadVueltas = Number(prompt("¿Cuántas vueltas va a realizar?"));
-let vuelta ="";
+
 
 
 for (let i=0; i< cantidadVueltas; i ++){
     tiempo = Number(prompt(`¿En cuántos segundos recorrió la vuelta?`)); 
-    vuelta + `\n`; 
+    vueltas += (cantidadVueltas && tiempo )+ `\n`; 
 }
-    alert(cantidadVueltas +  tiempo)
+    alert(vueltas)
 
 
 // alert(`Cantidad de vueltas: ${cantidadVueltas}. 
