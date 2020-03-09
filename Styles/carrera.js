@@ -9,15 +9,21 @@
 
 
 let cantidadVueltas = Number(prompt("¿Cuántas vueltas va a realizar?"));
-
+let tiempo = "";
+let vueltas ="";
+let resultado="";
+let tiempos="";
+let promedio ="";
 
 
 for (let i=0; i< cantidadVueltas; i ++){
     tiempo = Number(prompt(`¿En cuántos segundos recorrió la vuelta?`)); 
-    vueltas += (cantidadVueltas && tiempo )+ `\n`; 
+    resultado +=(` \nVuelta N° ${i +1}: ${tiempo}s.`);
+    tiempos += tiempo;
+    promedio = tiempos / cantidadVueltas; // Ver cómo calcular los promedios
+   
+
 }
-    alert(vueltas)
 
 
-// alert(`Cantidad de vueltas: ${cantidadVueltas}. 
-// La vuelta ${vuelta + 1} duró ${tiempo}`)
+alert(`Cantidad de vueltas: ${cantidadVueltas}` + resultado + `\nPromedio: ${promedio}s `)
