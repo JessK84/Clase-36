@@ -60,7 +60,7 @@ switch (operaciones) {
     case "salir":
         alert("Muchas gracias por confiar en nuestros servicios")
         break;
-        default:
+    default:
         alert("instrucción ingresada incorrectamente, intente nuevamente");
               
 }
