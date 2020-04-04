@@ -8,10 +8,10 @@
 // ACARICIAR: +4 felicidad
 // Cuando el usuario selecciona una, debe mostrar el valor final de las variables.
 
-let saludTamagochi = Math.round(Math.random() * 10);
-let felicidadTamagochi = Math.round(Math.random() * 10);
-let limpiezaTamagochi = Math.round(Math.random() * 10);
-let energíaTamagochi = Math.round(Math.random() * 10);
+let saludTamagochi = Math.ceil(Math.random() * 10);
+let felicidadTamagochi = Math.ceil(Math.random() * 10);
+let limpiezaTamagochi = Math.ceil(Math.random() * 10);
+let energíaTamagochi = Math.ceil(Math.random() * 10);
 
 const sentimientosTamagochi =["salud", "felicidad", "limpieza", "energía"]
 
